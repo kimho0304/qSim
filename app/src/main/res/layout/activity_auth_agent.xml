@@ -16,7 +16,6 @@
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="1dp"
         android:orientation="vertical"
-        android:weightSum="10"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,12 +24,11 @@
         <LinearLayout
             android:id="@+id/loginLayout"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="180dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
-            android:layout_weight="3"
             android:background="#96A6AD"
             android:orientation="vertical">
 
@@ -72,12 +70,11 @@
         <LinearLayout
             android:id="@+id/logLayout"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="420dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
-            android:layout_weight="7"
             android:background="#96A6AD"
             android:orientation="vertical">
 
@@ -95,17 +92,19 @@
 
             <ScrollView
                 android:id="@+id/logScroll"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="10dp"
                 android:fadeScrollbars="false"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/white"
                 android:layout_marginTop="15dp">
 
-                <EditText
+                <TextView
                     android:id="@+id/logText"
                     android:text=""
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/white" />
+                    android:layout_height="match_parent" />
 
             </ScrollView>
         </LinearLayout>

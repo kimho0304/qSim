@@ -8,7 +8,8 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 
 public class AuthAgentActivity extends AppCompatActivity {
-    private EditText idText, pwdText, logText;
+    private EditText idText, pwdText;
+    private TextView logText;
     private ScrollView logScroll;
 
     @Override
